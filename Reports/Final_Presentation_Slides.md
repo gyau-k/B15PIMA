@@ -6,7 +6,7 @@
 **Project Title:** Machine Learning for Early-Warning Diabetes Screening  
 **Institution:** University of Ghana – Legon (Comp. Sci. Dept.)  
 **Instructors:** Clifford Broni-Bediako and Michael Soli  
-**Group Leader:** Edward Tsatsu Akorlie | **Date:** 14th November 2025
+**Group Leader:** Edward Tsatsu Akorlie | **Date:** 1st February 2026
 
 ---
 

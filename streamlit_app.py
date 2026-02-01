@@ -10,18 +10,14 @@ import altair as alt
 import joblib
 import os
 
-# ============================================
-# PAGE CONFIGURATION
-# ============================================
+
 st.set_page_config(
     page_title="PIMA Diabetes Analytics",
     page_icon="🩺",
     layout="wide",
 )
 
-# ============================================
-# DATA LOADING
-# ============================================
+
 @st.cache_data
 def load_data():
     """Load and cache the preprocessed diabetes dataset."""
@@ -42,20 +38,15 @@ def load_model():
 df = load_data()
 model, scaler = load_model()
 
-# ============================================
-# HEADER
-# ============================================
+
 """
-# 🩺 PIMA Diabetes Analytics
+# PIMA Diabetes Analytics
 
 Explore the PIMA Indians Diabetes Dataset and assess diabetes risk using Machine Learning.
 """
 
-""  # vertical space
+""
 
-# ============================================
-# KEY METRICS
-# ============================================
 diabetic_count = df[df['Class'] == 1].shape[0]
 non_diabetic_count = df[df['Class'] == 0].shape[0]
 diabetic_pct = (diabetic_count / df.shape[0]) * 100
@@ -69,7 +60,7 @@ avg_bmi_non_diabetic = df[df['Class'] == 0]['BMI'].mean()
 avg_age_diabetic = df[df['Class'] == 1]['Age'].mean()
 avg_age_non_diabetic = df[df['Class'] == 0]['Age'].mean()
 
-## Summary Metrics
+
 with st.container():
     cols = st.columns(4)
     
@@ -116,9 +107,7 @@ with st.container():
 ""
 ""
 
-# ============================================
-# RESEARCH QUESTIONS
-# ============================================
+
 """
 ## Research Questions
 """
@@ -136,6 +125,7 @@ elif selected_outcomes == "Diabetic (1)":
     plot_df = df[df['Class'] == 1]
 else:
     plot_df = df
+
 
 # Charts Row 1
 cols = st.columns([1, 2])
@@ -174,6 +164,7 @@ with cols[1].container(border=True):
     
     st.altair_chart(glucose_chart, use_container_width=True)
 
+
 # Charts Row 2
 cols = st.columns(2)
 
@@ -210,9 +201,7 @@ with cols[1].container(border=True):
 
 ""
 
-# ============================================
-# CORRELATION HEATMAP
-# ============================================
+
 cols = st.columns([2, 1])
 
 with cols[0].container(border=True):
@@ -262,9 +251,6 @@ with cols[1].container(border=True):
 
 ""
 
-# ============================================
-# PREDICTION TOOL
-# ============================================
 """
 ## Diabetes Risk Prediction
 
@@ -314,16 +300,11 @@ else:
 
 ""
 
-# ============================================
-# RAW DATA
-# ============================================
 with st.expander("View raw data"):
     st.dataframe(df, use_container_width=True)
 
 ""
 
-# ============================================
-# FOOTER
-# ============================================
+
 st.divider()
 st.caption("**Cohort B · Group 15** — PIMA Diabetes Analytics | DSCD 611: Programming for Data Scientists")
