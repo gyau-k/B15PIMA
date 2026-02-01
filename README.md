@@ -145,7 +145,7 @@ Our analysis compared 5 algorithms. The **Random Forest** model was selected as 
 | Role | Name |
 |------|------|
 | Group Leader | Edward Tsatsu Akorlie |
-| Member | Daniel K. Adotey |
+| Streamlit UI/UX | Daniel K. Adotey |
 | Member | Kwame Ofori-Gyau |
 | Member | Francis A. Sarbeng |
 | Member | Caleb A. Mensah |
