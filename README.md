@@ -22,10 +22,10 @@ This project implements a complete Supervised Machine Learning pipeline for the 
 The goal is to predict the risk of diabetes based on medical metrics (Glucose, BMI, Age, etc.). We use the **PIMA Indians Diabetes Dataset** and compare multiple classifiers to find the most robust predictive model for community health screening.
 
 ### Key Features
-- 🔬 **Exploratory Data Analysis** with clinical interpretations
-- 🤖 **5 ML Models** compared (Random Forest, SVM, KNN, Logistic Regression, Decision Tree)
-- 📊 **Interactive Streamlit Dashboard** for data exploration and risk prediction
-- 📓 **Detailed Jupyter Notebook** with markdown explanations
+- **Exploratory Data Analysis** with clinical interpretations
+- **5 ML Models** compared (Random Forest, SVM, KNN, Logistic Regression, Decision Tree)
+- **Interactive Streamlit Dashboard** for data exploration and risk prediction
+- **Detailed Jupyter Notebook** with markdown explanations
 
 ---
 
